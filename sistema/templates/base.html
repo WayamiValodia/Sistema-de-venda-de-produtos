@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset ="utf-8">
+    <title>Sistema de venda de produtos</title>
+  </head>
+  
+  <body>
+    <header style="background-color:#555; margin:0px; padding: 10px; text-align:center; color:#f5f5f5">
+      <h1>MINHA LOJA</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        
+        <li>
+          <a href="/">Página inicial</a>
+        </li>
+        
+      
+        {% if user.is_authenticated %}
+          <li>
+            <a href="/productos">Productos</a>
+          </li>
+         
+          <li>
+            <a href="/logout">Sair</a>
+          </li>
+       
+        {% else %}
+          <li>
+            <a href="/cadastro">Cadastrar-se</a>
+          </li>
+           <li>
+             <a href="/entrar">Login</a>
+           </li>
+        {% endif %}
+        
+      </ul>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+  </body>
+  
+  <footer style="text-align:center; color:black; margin-top:700px; padding:0px">
+   <p>#sistema_de_vendas#by:ngongajaime/2025©</p>
+  </footer>
+</html>
