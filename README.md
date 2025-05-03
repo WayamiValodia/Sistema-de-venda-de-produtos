@@ -8,6 +8,7 @@ Bem-vindo ao projeto "Sistema de venda de produtos",  Este é um sistema projeta
   - Contribuição
 
  Funcionalidades:
+  
   ✓Cadastro de Usuários: Permite que os usuários se registrem e façam login.
   
   ✓Catálogo de Produtos: Exibe uma lista de produtos disponíveis para compra.
