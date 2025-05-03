@@ -1,4 +1,4 @@
-Bem-vindo ao projeto "Sistema de venda de produtos",  Este é um sistema projetado para facilitar a venda de produtos online, oferecendo uma experiência de compra intuitiva e eficiente.
+Bem-vindo ao projeto "Sistema de venda de produtos(Minha Loja)",  Este é um sistema projetado para facilitar a venda de produtos online, oferecendo uma experiência de compra intuitiva e eficiente.
 
  #Índice:
   - Funcionalidades
