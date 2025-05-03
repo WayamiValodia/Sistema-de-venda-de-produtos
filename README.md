@@ -9,9 +9,13 @@ Bem-vindo ao projeto "Sistema de venda de produtos",  Este é um sistema projeta
 
  Funcionalidades:
   ✓Cadastro de Usuários: Permite que os usuários se registrem e façam login.
+  
   ✓Catálogo de Produtos: Exibe uma lista de produtos disponíveis para compra.
+  
   ✓Carrinho de Compras: Os usuários podem adicionar produtos ao carrinho e revisar suas compras.
+  
   ✓Checkout: Processo simplificado para finalizar a compra.
+  
   ✓Administração de Produtos: Interface para adicionar, editar ou remover produtos (acesso restrito a administradores).
   
 Tecnologias Utilizadas:
@@ -35,11 +39,10 @@ Instalação:
 
 5. Acesse o aplicativo em `http://localhost:8000` (ou outra porta que você tenha configurado).
 
-✓Uso
+✓Uso:
  Após levantar o servidor, você poderá navegar pelo catálogo de produtos, adicionar itens ao carrinho e finalizar compras. Para acesso administrativo, faça login com as credenciais apropriadas.
 
-✓ Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias ou correções;
+✓ Contribuição:
+ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias ou correções;
 Espero que você goste do meu sistema! 
 Se tiver alguma dúvida ou sugestão, entre em contato: wayamivalodia@gmail.com/WhatsApp:940143790
