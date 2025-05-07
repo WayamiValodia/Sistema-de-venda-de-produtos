@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth import login,logout,authenticate
 from django.db import IntegrityError
+from .formulario import produtoForm
+from .models import Productos
 
 def home(request):
   return render(request,'home.html')
@@ -35,12 +37,33 @@ def cadastro(request):
   })
   
 def produto(request):
-  return render(request, 'produtos.html')
-
+  todosProd = Productos.objects.all()
+  return render(request, 'produtos.html',{
+    'produto':todosProd
+  })
+  
+def insertProduto(request):
+  if request.method == 'GET':
+    return render(request, 'insert_producto.html',{
+    'form':produtoForm
+   })
+  else:
+     try:
+       form = produtoForm(request.POST)
+       novoProd = form.save(commit=False)
+       novoProd.user = request.user
+       novoProd.save()
+       print(novoProd)
+       return redirect('productos')
+     except ValueError:
+       return render(request, 'insert_producto.html',{
+    'form':produtoForm,
+       'erro':'Por favor! insira dados válidos'
+   })
+  
 def Logout(request):
   logout(request)
   return redirect(home)
-  
 def entrar(request):
   if request.method == "GET":
     return render(request, 'entrar.html', {

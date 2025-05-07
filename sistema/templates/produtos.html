@@ -2,4 +2,14 @@
 
 {% block content %}
   <h1>PRODUTOS</h1>
+  <ul>
+   {% for produto in produto %}
+     <li>
+       <h2>{{produto.nome}}</h2>
+       <p>categoria: {{produto.categoria}}</p>
+       <p>descrição: {{produto.descricao}}</p>
+      
+       <li>
+   {% endfor %}
+  </ul>
 {% endblock %}
